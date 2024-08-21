@@ -96,13 +96,182 @@
     </header>
 
     <main>
-           <!-- <div class="product-section">
-            .product-
-           </div> -->
+           <div class="product-section">
+            <div class="product-text">
+                <p class="primary-color">Product</p>
+                <h3>Most Popular Items</h3>
+            </div>
+            <div class="product-cards">
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group.png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group (1).png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group (2).png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group (3).png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group (4).png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="img-div">
+                        <img src="./images/Mask group (5).png" alt="" width="150" height="120">
+                    </div>
+                    <div class="card-text">
+                        <div>
+                            <h4>Gyro Sandwhic</h4>
+                           
+                            <p> <span class="primary-color"><i class="fa-solid fa-star"></i></span> <span> 4.9</span></p>
+                            
+                        </div>
+                        <div>
+
+                            <button class=" btn">Add to cart</button>
+                           
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  
+            <div class="cards-btn">
+                <button onclick="show()" class="btn">Show more</button>
+            </div>
+           </div>
+           
+           <div class="extra-cards">
+           <div id="current-target-card">
+            <div class="html-card">
+             <img src="./images/html.png" alt="html icon">
+             <h1>HTML</h1>
+             <p>Html stands for hyper text markup language. It is used to make the skeleton of a website.</p>
+             <button><a class="btn">learn more</a></button>
+            </div>
+
+
+            <div class="css-card">
+             <img src="./images/css.png" alt="css icon">
+             <h1>CSS</h1>
+             <p>Css stands for cascading style sheet. It's used to style a website.It not a programming language</p>
+             <button><a class="btn">learn more</a></button>
+            </div>
+
+            <div class="js-card">
+             <img src="./images/js.png" alt="js icon">
+             <h1>JS</h1>
+             <p>Javascript is a programming language. it makes the website dynamic.It is used in both frontend and backend</p>
+             <button><a class="btn">learn more</a></button>
+            </div>
+                 
+                    
+           </div>
+
+           
+           <div style="text-align: center; " id="hidden">
+            <button onclick="hide()" class="btn" >Show less</button>
+        </div>
+
+    </div>
+
     </main>
 
     <footer>
 
     </footer>
+    <script>
+        function show() {
+            document.getElementById('current-target-card').style.display = 'flex';
+            document.getElementById('hidden').style.display='block';
+        }
+
+        function hide(){
+            document.getElementById('current-target-card').style.display='none';
+            document.getElementById('hidden').style.display='none';
+        }
+    </script>
 </body>
 </html>
