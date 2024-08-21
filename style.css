@@ -1,0 +1,77 @@
+
+/* Navbar starts here */
+
+body{
+    background-color:rgba(250, 235, 215, 0.1) /* Full opacity (100%) */
+    ;
+    
+}
+.nav-bar{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-center ul{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-center ul li{
+    list-style-type: none;
+}
+input{
+   padding-right: 20px;
+   border: none;
+   padding: 10px;
+}
+
+button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: aliceblue;
+}
+
+.email, .vertical-bar{
+    font-size: 30px;
+}
+
+.hamberger-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamberger-menu{
+    display: none;
+}
+
+.hamberger-menu ul span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+   
+}
+
+/* navbar responsive */
+
+@media screen and (max-width:576px) {
+    .nav-bar{
+        width: 100%;
+
+    }
+
+    .hamberger-menu{
+        display: block;
+    }
+
+    .nav-center{
+        display: none;
+    }
+
+    .nav-end{
+        display: none;
+    }
+}
