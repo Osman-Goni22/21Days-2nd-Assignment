@@ -219,7 +219,7 @@
             </div>
                   
             <div class="cards-btn">
-                <button onclick="show()" class="btn">Show more</button>
+                <button onclick="show()" class="btn" id="hide">Show more</button>
             </div>
            </div>
            
@@ -301,6 +301,11 @@
     </section>
 
     <section class="testimonial-section">
+        <div class="testimonial">
+            <p class="primary-color">Testimonial</p>
+            <h1>Our Happy Client Says</h1>
+        </div>
+       <div class="testimonial-2">
         <div class="testimonial-text">
             <div class="upper-part">
                 <div class="image">
@@ -319,8 +324,35 @@
         <div class="testtimonial-images">
          <img src="./images/3-36085_fast-food-banner-junk-food-transparent-background 1.png" alt="">
         </div>
+       </div>
+    </section>
+
+
+    <section class="subscription">
+        <div class="left-image">
+          <img src="./images/burger_sandwich_PNG4135 1.png" alt="">
+        </div>
+
+        <div class="right-btn">
+             <h2>Subcribe To Our Newsletter</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipidrscing elit. Purus mauris sem sed urna venenatis vivamus. Egestas in velit nulla viverra turpis id ac. Amet faucibus tempus.</p>
+
+             <div style="position: relative; width: 300px;" class="group">
+                <input type="email" placeholder="Enter Email" required style="width: 100%; border-radius:10px; padding:20px 10px;"/>
+                <button class="btn" style="position: absolute; top: 50%; right: 0px; transform: translateY(-50%); padding: 10px 20px; color:white" id="subscribe">
+                   Subscribe
+                </button>
+               
+             </div>
+
+             <h2 id="demo"></h2>
+        </div>
+
     </section>
         
+
+    
+     
     </main>
 
     <footer>
@@ -330,12 +362,19 @@
         function show() {
             document.getElementById('current-target-card').style.display = 'flex';
             document.getElementById('hidden').style.display='block';
+            document.getElementById('hide').style.display='none';
         }
 
         function hide(){
             document.getElementById('current-target-card').style.display='none';
             document.getElementById('hidden').style.display='none';
+            document.getElementById('hide').style.display='inline';
         }
+
+        const demo= document.getElementById('subscribe');
+        demo.addEventListener('click', function(){
+            document.getElementById('demo').innerText='Subscription done';
+        })
     </script>
 </body>
 </html>
